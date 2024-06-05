@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff6347;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header .cta {
+    background-color: white;
+    color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('burger-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#hero .cta,
+#hero .secondary-cta {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#hero .cta {
+    background-color: #ff6347;
+    color: white;
+}
+
+#hero .secondary-cta {
+    background-color: white;
+    color: #ff6347;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-items .item {
+    width: 200px;
+    text-align: left;
+}
+
+#special-offers,
+#testimonials {
+    background-color: #f9f9f9;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 20px;
+}
+
+footer .newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+footer .newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #hero {
+        padding: 50px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
